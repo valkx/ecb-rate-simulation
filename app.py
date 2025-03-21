@@ -15,7 +15,7 @@ def plot_results(rates, inflations, output_gaps, ecb_rates):
     fig.add_trace(go.Scatter(x=time, y=inflations, mode='lines', name='Inflation'), row=2, col=1)
     fig.add_trace(go.Scatter(x=time, y=output_gaps, mode='lines', name='Output Gap'), row=3, col=1)
     
-    fig.update_layout(title_text="ECB Interest Rate Simulation (Since 2000)", height=800, showlegend=True, template="plotly_white")
+    fig.update_layout(title_text="Algoritmic Interest Rate Simulation (Since 2000)", height=800, showlegend=True, template="plotly_white")
     fig.update_xaxes(title_text="Time", row=3, col=1)
     fig.update_yaxes(title_text="Interest Rate (%)", row=1, col=1)
     fig.update_yaxes(title_text="Inflation (%)", row=2, col=1)
